@@ -1,0 +1,27 @@
+body{
+    background-color: #222831; 
+    color: white;
+ }
+ ul{
+    list-style: none;
+ }
+ li{
+     padding: 5px;;
+ }
+ .container{
+     display: flex;          
+     justify-content: center; 
+     align-items: center;  
+     height: 500px;
+     flex-direction: column;
+ }
+ .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 2px 2px 5px white;
+    border-radius: 15px;
+    padding: 20px;
+ }
+
