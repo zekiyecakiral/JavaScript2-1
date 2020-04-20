@@ -9,7 +9,7 @@ const myHobbies = [
   ];
 
  const list = document.createElement("ul");
-  myHobbies.map(item => {
+  myHobbies.forEach(item => {
       const hobby = document.createElement("li");
       hobby.innerHTML = item;
       list.appendChild(hobby);

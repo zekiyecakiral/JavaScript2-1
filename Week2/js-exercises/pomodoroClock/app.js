@@ -29,8 +29,10 @@ downButton.addEventListener("click", function () {
   // If starting the timer, you can not the change session length
   if (!pressPlay) {
     const sessionLen = document.getElementById("sesionLength");
-    sessionLen.innerText = formatTwoDigit((Number(sessionLen.innerText) - 1));
-    minuteTag.innerText = formatTwoDigit((Number(minuteTag.innerText) - 1));
+    if(Number(sessionLen.innerText) !== 0){
+      sessionLen.innerText = formatTwoDigit((Number(sessionLen.innerText) - 1));
+      minuteTag.innerText = formatTwoDigit((Number(minuteTag.innerText) - 1));
+    }
   }
 });
 

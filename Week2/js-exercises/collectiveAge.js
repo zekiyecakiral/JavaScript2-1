@@ -10,7 +10,7 @@ const hackYourFutureMembers = [
 const memberAges = hackYourFutureMembers.map((member) => member.age);
 
 function sumAge() {
-  return memberAges.reduce((a, b) => a + b, 0);
+  return memberAges.reduce((total, age) => total + age, 0); 
 }
 
 function main() {
