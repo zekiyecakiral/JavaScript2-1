@@ -1,0 +1,200 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #842222,
+    #641b22,
+    #44161d,
+    #261014,
+    #000000
+  );
+  color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1 {
+  font-size: 31px;
+  color: white;
+}
+h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 0.9;
+}
+label {
+  padding-bottom: 10px;
+  text-align: initial;
+}
+form {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+select {
+  padding: 2px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  background: white;
+  border: 1px solid #ccc;
+  outline: 0;
+  height: 43px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 29%;
+  margin: auto;
+  margin-top: 40px;
+}
+.block {
+  width: 100%;
+  border-radius: 30px;
+  text-align: center;
+  border-top: none;
+  background-color: white;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+.form-control {
+  background-color: #fff;
+  font-size: 14px;
+  flex: 1;
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.amount {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+input:focus {
+    outline:auto;
+
+}
+.input-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2;
+  color: #555;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.calculate {
+  border: 1px solid #190b0b;
+  border-radius: 4px;
+  padding: 0.6em 1em;
+  color: #fff;
+  background-color: #190b0b;
+  font-size: 18px;
+  margin: 10px;
+}
+.text {
+  white-space: pre-line;
+}
+.top-text {
+  font-family: "Playfair Display", serif;
+}
+.header {
+  background-color: #060203;
+  width: 100%;
+  border-radius: 30px;
+  text-align: center;
+  border-bottom: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.tip-amount {
+  display: none;
+}
+
+.result {
+  height: 100px;
+}
+
+.alert-footer {
+  padding-left: 90%;
+}
+.alertButton {
+  background-color: #0595db;
+  padding: 5px 18px 5px 18px;
+  border: 1px solid #0595db;
+  border-radius: 6px;
+  color: white;
+}
+
+.alert-container {
+  display: none; /*Hidden by default */
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.alert-box {
+  background-color: #fefefe;
+  margin: auto;
+  margin-top: 50px;
+  padding: 34px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  width: 36%;
+}
+
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: green;
+  transition: background-color 5000s ease-in-out 0s;
+}
+@media screen and (max-width: 992px) {
+  .top-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-text {
+    font-size: 15px;
+  }
+}
+
+

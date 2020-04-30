@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1 class="top-text"> TIP CALCULATOR </h1>
+        </div>
+        <form>
+        <div class="block">
+          <div class="form-group">
+              <label>How much was your bill?</label>
+              <div class="input-group">
+                  <span class="input-group-addon">$</span>
+                 <input id ="bill" type="text" class="form-control amount"  >
+              </div>
+          
+          </div>
+          <div class="form-group">
+            <label>How was your service?</label>
+            <select id="servicePercent" class="select-control">
+                <option value="choose">Choose an option...</option>
+                <option value="30">30% - Outstanding</option>
+                <option value="20">20% - Good</option>
+                <option value="15">15% - OK</option>
+                <option value="10">10% - Bad</option>
+                <option value="5">5% - Terrible</option>
+            </select>
+        </div>
+          <div class="form-group">
+            <label>How many people are sharing the bill?</label>
+            <input id="peopleCount" type="text" class="form-control people" >
+        </div>
+        <button id="calculate" class="calculate" type="submit">Calculate</button>
+    </form>
+       
+    <div class="result"> 
+        <div class="tip-amount" id ="tip-amount"> 
+            <h2>TIP AMOUNT</h2>
+            <h2 id ="calculateResult" class="text">$ </h2>
+        </div>     
+    </div>
+    </div>
+    <div class="alert-container" id="alert-container"> 
+        <div class="alert-box">
+            <div class="alert-header">
+                <h4>Information</h4>
+                <hr>
+            </div>
+            <div class="alert-main">
+                <p>Fill in all the fields!</p>
+            </div>
+            <div class="alert-footer">
+                <button class="alertButton" id="alertButton" type="button">OK</button>
+            </div>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
