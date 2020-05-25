@@ -1,12 +1,8 @@
 "use strict";
 
-function createBase(number1) {
-  let counter = 0;
-  let sum = 9;
-  return function () {
-    sum += number1 + (counter * number1) / 2;
-    counter++;
-    return sum;
+function createBase(number = 0) {
+  return function (closureNum = 0) {
+    return closureNum + number;
   };
 }
 
@@ -14,5 +10,6 @@ const addSix = createBase(6);
 
 // Put here your function calls...
 console.log(addSix());
-console.log(addSix());
-console.log(addSix());
+console.log(addSix(9));
+console.log(addSix(18));
+console.log(addSix(30));

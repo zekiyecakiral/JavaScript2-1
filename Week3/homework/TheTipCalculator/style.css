@@ -131,8 +131,8 @@ input:focus {
   display: none;
 }
 
-.result {
-  height: 100px;
+.result h2 {
+  margin: 0px;
 }
 
 .alert-footer {

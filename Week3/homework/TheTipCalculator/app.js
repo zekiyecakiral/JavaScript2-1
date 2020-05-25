@@ -15,7 +15,7 @@ form.addEventListener('submit', (e) => {
         alert.style.display="block"
         return;
     }
-    const sum = (Number(bill) + Number(servicePercent)/100 * Number(bill) ) / Number(peopleCount).toFixed(2);
+    const sum = ( Number(servicePercent)/100 * Number(bill) ) / Number(peopleCount).toFixed(2);
 
     calculateResult.innerText = currencyFormat(sum);
     tipAmount.style.display="block"; 
